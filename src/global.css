@@ -15,8 +15,8 @@
 
 /*retirando estilização padrão do navegador*/
 * {
-  border: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
