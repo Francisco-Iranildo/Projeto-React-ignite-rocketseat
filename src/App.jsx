@@ -1,4 +1,4 @@
-import { Post } from "./Post"
+import { Post } from "./components/Post"
 import './global.css'
 import { Header } from "./components/Header"
 import { Sidebar } from "./components/Sidebar"
@@ -13,12 +13,8 @@ export function App() {
         <Sidebar/>
         <main>
           <Post 
-            autor = "francisco iranildo"
-            conteudo="esta aprendendo a usar o react"
           />
           <Post
-            autor = "Aomine Daiki"
-            conteudo = "O único que pode me vencer, sou eu mesmo"
           />
         </main>
       </div>

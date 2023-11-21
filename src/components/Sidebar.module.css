@@ -15,6 +15,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /*o valor de zero e para que possa ter um valor negativo (do width e heigth do avatar) para centralizar o avatar */
+  margin: calc(0px - 1.5rem - 6px);
+}
+
+.avatar {
+  width: calc(3rem + 12px);
+  /*somando o tamanho da imagem mais a */
+  height: calc(3rem + 12px);
+  border-radius: 8px;
+  border: 4px solid var(--gray-800);
+  outline: 2px solid var(--green-500);
+}
+
+.perfil strong {
+  margin-top: 1rem;
+  color: var(--gray-100);
+  line-height: 1.6;
+}
+
+.perfil span {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .sidebar footer {
@@ -32,8 +57,15 @@
   padding: 0 1.5rem;
   font-weight: bold;
   text-decoration: none;
+  gap: 0.5rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.sidebar footer a:hover {
+  background: var(--green-500);
+  color: var(--white);
 }
