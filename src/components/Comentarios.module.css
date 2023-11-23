@@ -1,0 +1,87 @@
+.comentarios {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.comentarios>img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+
+.caixaComentar {
+  flex: 1;
+}
+
+.conteudoComentario {
+  background: var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.conteudoComentario header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.conteudoComentario header button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  line-height: 0;
+  /*imagem preenche todo tamanho do botao*/
+  border-radius: 4px;
+}
+
+.conteudoComentario header button:hover {
+  color: var(--red-500);
+}
+
+.autorTempo strong {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.autorTempo time {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.conteudoComentario p {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
+
+.caixaComentar footer {
+  margin-top: 1rem;
+}
+
+.caixaComentar footer button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+
+.caixaComentar footer button:hover {
+  color: var(--green-300);
+}
+
+.caixaComentar footer button svg {
+  margin-right: 0.5rem;
+}
+
+.caixaComentar footer button span::before {
+  content: "\2022";
+  padding: 0 0.25rem;
+}
